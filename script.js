@@ -138,7 +138,7 @@ function tryToGetImage(string){
 
 
 window.addEventListener('load', function () {
-    document.getElementById("input").addEventListener('change', (event) => {
+    document.getElementById("input").addEventListener('keyup', (event) => {
         event.preventDefault();
         let character = document.getElementById("character")
         character.innerHTML = '';
