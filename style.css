@@ -9,6 +9,7 @@ html{
 body{
     width:100%;
     display: flex;
+    overflow:hidden;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -99,6 +100,7 @@ body{
 }
 
 .box{
+    position:relative;
     display: flex;
     width: 50%;
     min-height: 60vw;
