@@ -142,7 +142,6 @@ window.addEventListener('load', function () {
         let character = document.getElementById("character")
         character.innerHTML = '';
         let i = tryToGetImage(event.target.value);
-        console.log(character)
         if(i){
             character.appendChild(i)
         }else{
