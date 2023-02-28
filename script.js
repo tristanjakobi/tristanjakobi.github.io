@@ -6,7 +6,7 @@ class part {
     constructor(length, location){
         this.length = length;
         this.element = document.createElement("img");
-        this.element.setAttribute("src", "images/parts/" + location.toLowerCase() + ".png");
+        this.element.setAttribute("src", "docs/assets/images/parts/" + location.toLowerCase() + ".png");
     } 
 }
 
@@ -66,7 +66,6 @@ function findMiddle(string){
     return ""
 }
 function buildImage(string){
-    e.preventDefault();
     let elem = document.getElementById("character")
     let s = string;
 
@@ -127,7 +126,7 @@ function tryToGetImage(string){
 
     if(preBuilt.includes(string.toLowerCase())){
         var elem = document.createElement("img");
-        elem.setAttribute("src", "images/" + string.toLowerCase() + ".jpg");
+        elem.setAttribute("src", "docs/assets/images/" + string.toLowerCase() + ".jpg");
         elem.setAttribute("alt", string);
         return elem;
     }else{
@@ -139,6 +138,7 @@ function tryToGetImage(string){
 
 window.addEventListener('load', function () {
     document.getElementById("input").addEventListener('change', (event) => {
+        event.preventDefault();
         let character = document.getElementById("character")
         character.innerHTML = '';
         let i = tryToGetImage(event.target.value);
