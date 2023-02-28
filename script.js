@@ -146,7 +146,7 @@ window.addEventListener('load', function () {
         if(i){
             character.appendChild(i)
         }else{
-            buildImage(event.target.value);
+            buildImage(event.target.value.toLowerCase());
         }
     });;
   })
