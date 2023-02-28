@@ -66,6 +66,7 @@ function findMiddle(string){
     return ""
 }
 function buildImage(string){
+    console.log(string)
     let elem = document.getElementById("character")
     let s = string;
 
