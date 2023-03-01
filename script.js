@@ -25,6 +25,7 @@ const topParts = {
 
 const middleParts = {
     "gug" : new part(3, "hole"),
+    "amo" : new part(3, "eyes"),
     "gus" : new part(3, "morebody"),
     "mo" : new part(2, "body"),
     "gu" : new part(2, "body"),
